@@ -3,6 +3,7 @@
 alias gil="git log"
 alias gic="git commit -m"
 alias gico="git checkout"
+alias gif="git fetch"
 alias gip="git pull"
 alias gipu="git push"
 alias gis="git status"
