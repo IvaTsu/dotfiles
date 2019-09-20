@@ -1,0 +1,17 @@
+# if the working directory is Work - load that user data
+[includeIf "gitdir:~/Work/"]
+		path = .gitconfig-work
+# if the working directory is Projects - load that user data
+[includeIf "gitdir:~/Projects/"]
+		path = .gitconfig-personal
+[core]
+	autocrlf = input
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+# default user
+[user]
+	name = "user"
+	email = "email"
