@@ -1,0 +1,62 @@
+{
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.autoIndent": false,
+	// enable save on 'cmd' + 's'
+	"editor.formatOnSave": true,
+	"editor.renderWhitespace": "all",
+	"window.zoomLevel": 0,
+	"prettier.useTabs": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"terminal.integrated.rendererType": "dom",
+	// font styles editor
+	"editor.fontFamily": "Dank Mono, Inconsolata, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontSize": 16,
+	"editor.fontWeight": "500",
+	"editor.fontLigatures": true,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					//following will be in italic
+					"comment",
+					"entity.name.type.class", //class names
+					"keyword", //import, export, return…
+					"constant", //String, Number, Boolean…, this, super
+					"storage.modifier", //static keyword
+					"storage.type.class.js" //class keyword
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					//following will be excluded from italics (VSCode has some defaults for italics)
+					"invalid",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	// font styles integrated terminal
+	"terminal.integrated.fontFamily": "Dank Mono",
+	"terminal.integrated.letterSpacing": 1,
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.fontSize": 12,
+	"terminal.integrated.fontWeight": "500",
+	"breadcrumbs.enabled": true,
+	"files.associations": {
+		"*.html": "html"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}
