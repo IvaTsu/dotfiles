@@ -9,3 +9,7 @@ alias gipu="git push"
 alias gis="git status"
 alias gia="git add"
 
+# Alias function for rebase with N as argument: > girb 2, where 2 is N
+girb() {
+  git rebase -i HEAD~$1
+}
